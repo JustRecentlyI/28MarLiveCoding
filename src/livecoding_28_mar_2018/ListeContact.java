@@ -5,6 +5,8 @@
  */
 package livecoding_28_mar_2018;
 
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 /**
  *
@@ -32,7 +34,27 @@ public class ListeContact {
     }
     @Override
     public String toString(){
-        
+        return 
+    }
+    
+    public void afficherClients(){
+        String s="";
+        Iterator<Contact> iter = l.iterator();
+        while(iter.hasNext()){
+            Contact c = iter.next();
+            if(c instanceof Client){
+                s = s + c;
+            }
+        }
+        System.out.println(s);
+    }
+    
+    public void afficherFournisseurs(){
+        String s="";
+        for(Contact c : l) //for JDK 5.0
+            if(c instanceof Fournisseur)
+                    s = s + c;
+        System.out.println(s);
     }
 }
 

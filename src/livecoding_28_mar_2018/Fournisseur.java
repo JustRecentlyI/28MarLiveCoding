@@ -9,6 +9,6 @@ package livecoding_28_mar_2018;
  *
  * @author p1705387
  */
-public class Fournisseur {
+public class Fournisseur extends Contact {
     
 }
