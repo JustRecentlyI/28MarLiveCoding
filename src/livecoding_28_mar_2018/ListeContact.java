@@ -26,7 +26,7 @@ public class ListeContact {
     }
     public void supprimer(int id) throws ContactInexistant{
         for(Contact c : l)
-            if(c.getIdentifiant() == id){
+            if(c.getId() == id){
                 
             }
         
@@ -34,7 +34,7 @@ public class ListeContact {
     }
     @Override
     public String toString(){
-        return 
+        return "METHODE NON FINIE";
     }
     
     public void afficherClients(){
