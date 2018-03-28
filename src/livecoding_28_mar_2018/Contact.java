@@ -5,6 +5,7 @@
  */
 package livecoding_28_mar_2018;
 
+import static java.time.temporal.TemporalQueries.localDate;
 import java.util.Date;
 import java.util.Objects;
 
@@ -29,6 +30,7 @@ public class Contact {
         prenom = "prenom";
         numTel = 0011223344;
         identifiant = 0;
+        Date localDate = null;
         dateCreationContact = localDate;
     }
     
